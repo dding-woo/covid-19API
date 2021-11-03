@@ -5,7 +5,7 @@ const koreaNewCaseText = document.querySelector('.new__case');
 
 axios({
   method: 'get',
-  url: 'https://api.corona-19.kr/korea/country/new/?serviceKey=bgkFYc6ydOua1RIX4oMxPtGrHivzTEWhw',
+  url: 'https://api.corona-19.kr/korea/country/new/?serviceKey=',
   responseType: 'stream'
 })
   .then(function (response) {
