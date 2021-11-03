@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+  <script src="main.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="corona-info">
+    <div class="section__container">
+      <div class="title__container">
+        <h1>국내 지역 별 코로나 발생 정보</h1>
+        <span>지역을 선택하고 국내 지역 별 코로나 확진자에 대한 정보를 받으세요! </span>
+      </div>
+      <div class="corona--confirmed">
+        <ul>
+          <li>
+            <span class="case__title">국내 확진자</span>
+            <span class="total__case"></span>
+          </li>
+          <li>
+            <span class="case__title">국내 신규 확진자</span>
+            <span class="new__case"></span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="corona__chart-screen">
+        <div class="chart__container">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <!-- 지역 별 정보 제공 사이드 바 -->
+    <aside class="aside">
+      <nav class="aside__navbar">
+        <div class="city__corona__info">
+          <h2 class="city__name">서울</h2>
+          <ul>
+            <li>신규확진자</li>
+            <li>1,004</li>
+          </ul>
+          <ul>
+            <li>확진환자수</li>
+            <li>121,843</li>
+          </ul>
+          <ul>
+            <li>완치자수</li>
+            <li>109,151</li>
+          </ul>
+          <ul>
+            <li>사망자</li>
+            <li>807</li>
+          </ul>
+          <ul>
+            <li>발생율</li>
+            <li>1260</li>
+          </ul>
+          <ul>
+            <li>해외유입 신규 확진자</li>
+            <li>7</li>
+          </ul>
+          <ul>
+            <li>지역발생 신규 확진자</li>
+            <li>997</li>
+          </ul>
+        </div>
+        <div class="closebtn reset">
+          <button>X</button>
+        </div>
+      </nav>
+    </aside>
+  </section>
+
+
+</body>
+
+</html>

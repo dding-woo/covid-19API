@@ -1,0 +1,89 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.corona-info{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.corona-info .section__container{
+  padding: 0 30px;
+}
+.corona--confirmed ul{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 30px;
+}
+
+.corona--confirmed ul li+li{
+  border-left: 1px solid #ccc;
+}
+.corona--confirmed ul li span{
+  display: block;
+  letter-spacing: -1.02px;
+  font-size: 15px;
+  padding: 9px;
+}
+.corona--confirmed ul li .case__title{
+ 
+  border-bottom: 1px solid #ccc;
+}
+.corona-info .title__container h1{
+  font-size: 2rem;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.corona-info .title__container span{
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: -0.02;
+  margin-bottom: 30px;
+}
+.corona__chart-screen{
+  width: 100%;
+  margin-top: 50px;
+}
+.corona__chart-screen > .chart__container{
+  width: 80%;
+  margin: 0 auto;
+}
+.aside{
+  width: 250px;
+  position: fixed;
+  right:0;
+  top: 0;
+  height: 100%;
+  background-color: #FEE5E0;
+  z-index: 2;
+}
+.aside__navbar{
+  
+  height: 100%;
+  padding: 60px 20px 0; 
+}
+.city__name{
+  margin-bottom: 7px;
+}
+.city__corona__info ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+.city__corona__info ul li{
+  font-size: 14px;
+  line-height: 14px;
+}
+.aside__navbar .closebtn{
+  position: absolute;
+  top: 20px;
+  right:20px;
+  padding: 4px;
+
+}
+button{
+  border: none;
+  background-color: transparent;
+}
